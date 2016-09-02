@@ -12,21 +12,21 @@
 </head>
 <body>
 	<header><!--Cabecera-->
-		<div class="container"><!--Container-->
-			<div class="navbar"><!--Primer menu-->
-			    <div class="navbar-header">
+		<div class="navbar back-gray"><!--Primer menu-->
+			<div class="container"><!--Container-->
+			    <div class="navbar-header gris">
 			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="primera" aria-expanded="false">
 			        <span class="sr-only">Menu</span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
 			      </button>
-			      <h6>Default Welcome Msg!</h6>
+			      <h6 class="mt16">Default Welcome Msg!</h6>
 			    </div>
 			    <div class="collapse navbar-collapse" id="primera">
 			      <ul class="nav navbar-nav navbar-right">
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Lenguaje <span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle gris" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><small>Lenguaje</small><span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			            <li><a href="#">Español</a></li>
 			            <li role="separator" class="divider"></li>
@@ -34,14 +34,14 @@
 			          </ul>
 			        </li>
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Currency <span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle gris" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><small>Currency</small><span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			            <li><a href="#">Pesos</a></li>
 			            <li><a href="#">Dolares</a></li>
 			          </ul>
 			        </li>
 			        <li class="dropdown">
-			          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account<span class="caret"></span></a>
+			          <a href="#" class="dropdown-toggle gris" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><small>My Account</small><span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			            <li><a href="#">Iniciar Sesion</a></li>
 			            <li><a href="#">Registrarse</a></li>
@@ -49,24 +49,26 @@
 			        </li>
 			      </ul>
 			    </div><!-- /.navbar-collapse -->
-			</div><!--Fin primer menu-->
-			<div><!--Principal-->
+			</div><!--fin ontainer-->
+		</div><!--Fin primer menu-->
+		<section><!--Principal-->
+			<div class="container">
 				<div class="row"><!--Renglon para principal-->
-					<div class="col-md-4"><!--horario-->
-						<div class="row"><!--rengon-->
-							<div class="col-md-4"><!--reloj-->
-								<i class="fa fa-clock-o" aria-hidden="true"></i>
+					<div class="col-md-3"><!--horario-->
+						<div class="row gris"><!--rengon-->
+							<div class="col-md-3"><!--reloj-->
+								<i class="fa fa-clock-o fa-4x" aria-hidden="true"></i>
 							</div><!--fin de renglon-->
-							<div class="col-md-8"><!--texto-->
-								<h3>OPENING TIME</h3>
-								<p>9:00 AM - 10:00 PM</p>
+							<div class="col-md-9"><!--texto-->
+								<h4>OPENING TIME</h4>
+								<small>9:00 AM - 10:00 PM</small>
 							</div><!--fin de texto-->
 						</div><!--fin de renglon-->
 					</div><!--Fin de horario-->
-					<div class="col-md-4"><!--logo-->
+					<div class="col-md-6"><!--logo-->
 						<img src="images/logo.png" alt="logo">
 					</div><!--fin de logo-->
-					<div class="col-md-4"><!--search-->
+					<div class="col-md-3"><!--search-->
 						<form  role="search">
 						  <div>
 						    <input type="text" placeholder="Search">
@@ -75,35 +77,38 @@
 						</form>
 					</div><!--fin de search-->
 				</div><!--fin de renglon-->
-			</div><!--Fin de principal-->
-			<nav class="navbar"><!--segundo menu-->
+			</div>
+		</section><!--Fin de principal-->
+		<nav class="navbar back-gray"><!--segundo menu-->
+			<div class="container">
 			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="segunda" aria-expanded="false">
-			        <span class="sr-only">Menu</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			    </div>
-			    <div class="collapse navbar-collapse" id="segunda">
-			      <ul class="nav navbar-nav">
-			       	 <li><a href="#">HOME</a></li>
-			       	  <li><a href="#">CONTACTUS</a></li>
-			      </ul>
-			      <ul class="nav navbar-nav navbar-right">
-			       	<li>
-			       		<div>
-			       			<p><span class="fa fa-shopping-cart" aria-hidden="true"></span>My Cart</p>
-			       			<p>2 item(s)  - $244.00</p>
-			       		</div>
-			       	</li>
-			      </ul>
-			    </div><!-- /.navbar-collapse -->
-			</nav><!--Fin segundo menu-->
-		</div><!--Fin de container -->
+			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="segunda" aria-expanded="false">
+			        	<span class="sr-only">Menu</span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			        	<span class="icon-bar"></span>
+			      	</button>
+				</div>
+				<div class="collapse navbar-collapse" id="segunda">
+				   	<ul class="nav navbar-nav">
+				    	<li><a href="#">HOME</a></li>
+				       	<li><a href="#">CONTACTUS</a></li>
+				      	</ul>
+				    <ul class="nav navbar-nav navbar-right">
+				      	<li>
+				       		<div>
+				       			<p><span class="fa fa-shopping-cart" aria-hidden="true"></span>My Cart</p>
+					       		<p>2 item(s)  - $244.00</p>
+					       	</div>
+					    </li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div><!--fin de container -->
+		</nav><!--Fin segundo menu-->
+		<!-- </div>Fin de container  -->
 	</header><!--Fin de cabecera-->
 	<section><!--banner principal-->
-		<div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+		<div id="myCarousel" class="carousel slide " data-ride="carousel">
 	    	<ol class="carousel-indicators">
 	      		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 	      		<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -460,9 +465,9 @@
 					<div>
 						<a href=""><span class="fa fa-facebook"></span></a>
 						<a href=""><span class="fa fa-twitter"></span></a>
-						<a href=""><span class=""></span></a>
+						<a href=""><span class="fa fa-rss"></span></a>
 						<a href=""><span class="fa fa-skype"></span></a>
-						<a href=""><span class=""></span></a>	
+						<a href=""><span class="fa fa-dribbble "></span></a>	
 					</div>
 				</div><!-- fin de accesorios -->
 				<div class="col-md-2"><!-- cuenta -->
